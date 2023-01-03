@@ -6,11 +6,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read('.ruby-version').strip
 
+gem 'hiredis'
 gem 'importmap-rails'
 gem 'pg'
 gem 'puma'
-gem 'rails', '~> 7.0.4'
-gem 'redis', '~> 4.0'
+gem 'rails'
+gem 'redis'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'

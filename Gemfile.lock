@@ -91,6 +91,7 @@ GEM
     erubi (1.12.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    hiredis (0.6.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -241,11 +242,12 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  hiredis
   importmap-rails
   pg
   puma
-  rails (~> 7.0.4)
-  redis (~> 4.0)
+  rails
+  redis
   rubocop
   rubocop-performance
   rubocop-rails
