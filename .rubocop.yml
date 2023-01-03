@@ -1,0 +1,92 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - db/schema.rb
+    - node_modules/**/*
+    - bin/**/*
+    - vendor
+
+Layout/LineLength:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+Rails/BulkChangeTable:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
+
+RSpec/RepeatedDescription:
+  Enabled: false
+
+RSpec/RepeatedExample:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Naming/InclusiveLanguage:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
