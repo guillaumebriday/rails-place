@@ -10,6 +10,7 @@ gem 'bootsnap', require: false
 gem 'hiredis'
 gem 'importmap-rails'
 gem 'puma'
+gem 'rack-attack'
 gem 'rails'
 gem 'redis'
 gem 'sprockets-rails'
