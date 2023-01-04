@@ -1,0 +1,7 @@
+<%= turbo_frame_tag key do %>
+  <%= button_to '',
+                r_place_path,
+                method: :patch,
+                params: { key: key },
+                class: "block aspect-square w-full bg-#{Rails.cache.read(key)}-500" %>
+<% end %>
