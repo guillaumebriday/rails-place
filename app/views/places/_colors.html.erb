@@ -1,0 +1,14 @@
+<div
+  data-controller="color"
+  class="flex gap-2 flex-wrap justify-center mt-12"
+>
+  <% MAP_COLORS.each do |color| %>
+    <button
+      type="button"
+      data-color-target="button"
+      data-action="color#update:prevent"
+      data-color-name-param="<%= color %>"
+      class="<%= class_names("border px-4 py-2 font-semibold text-sm bg-[#{color}] hover:opacity-80 rounded-full shadow-sm ring-blue-500", 'text-white': color != '#ffffff') %>"
+    >&nbsp;</button>
+  <% end %>
+</div>

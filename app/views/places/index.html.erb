@@ -1,22 +1,14 @@
 <%= turbo_stream_from 'place' %>
 
+<h1 class="flex items-center justify-center gap-2 mt-1 mb-5 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+  <%= image_tag 'logo.svg', class: 'max-h-10 mr-6' %>
+  r/Place on
+
+  <%= image_tag 'rails-logo.svg', class: 'max-h-10' %>
+</h1>
+
 <div class="grid grid-cols-[repeat(<%= MAP_SIZE %>,minmax(0,1fr))] max-w-2xl">
   <%= render partial: "places/block", collection: @keys, as: :key %>
 </div>
 
-<div
-  data-controller="color"
-  class="my-12"
->
-  <% MAP_COLORS.each do |color| %>
-    <button
-      type="button"
-      data-color-target="button"
-      data-action="color#update:prevent"
-      data-color-name-param="<%= color %>"
-      class="<%= class_names("px-4 py-2 font-semibold text-sm bg-#{color}-500 hover:opacity-80 rounded-full shadow-sm ring-blue-500", 'text-white': color != 'white') %>"
-    >
-      <%= color.titleize %>
-    </button>
-  <% end %>
-</div>
+<%= render 'places/colors' %>
