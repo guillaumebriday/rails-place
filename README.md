@@ -1,24 +1,28 @@
-# README
+# <img src="app/assets/images/logo.svg" width="24" height="24" alt="r/place logo"> r/place on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[r/place](https://www.reddit.com/r/place/) clone built with [Rails](https://rubyonrails.org/) and [Hotwire](https://hotwired.dev/).
 
-Things you may want to cover:
+## Purpose
 
-* Ruby version
+This project is a Proof of Concept (PoC).
 
-* System dependencies
+It requires almost no JavaScript at all, as you can see in the `app/assets/javascript` folder, thanks to Hotwire.
 
-* Configuration
+## Demo
 
-* Database creation
+👉 https://rails-place.guillaumebriday.fr
 
-* Database initialization
+## Limitations and Improvements
 
-* How to run the test suite
+- It does not scale on the frontend because of the number of DOM elements.
+- We should not use DIVs to create the tiles, it does not make sense.
+- We should save the grid into a database, not only in Redis.
+- We should add cooldown timer in the UI, not only a 422 error response.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
 
-* ...
+## License
+
+This project is released under the [MIT](http://opensource.org/licenses/MIT) license.
